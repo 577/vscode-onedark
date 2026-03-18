@@ -1,8 +1,8 @@
 {
-  "name": "material-theme",
+  "name": "material-theme-beta",
   "displayName": "One Dark Pro",
   "description": "Atom's iconic One Dark theme for Visual Studio Code",
-  "version": "3.19.0",
+  "version": "3.20.0",
   "publisher": "zhuangtongfa",
   "license": "MIT",
   "bugs": {
@@ -50,7 +50,7 @@
     "watch:theme": "nodemon ./scripts/generate-theme.ts",
     "watch:ts": "yarn build:ts -w",
     "vscode:prepublish": "yarn build && yarn package-web",
-    "package": "vsce package",
+    "package": "vsce package && code --uninstall-extension zhuangtongfa.material-theme-beta 2>/dev/null || true && code --install-extension material-theme-beta-3.20.0.vsix",
     "build:sass": "yarn sass --no-source-map scss:styles && yarn sass --no-source-map scss:styles/origin",
     "compile-web": "webpack --config ./build/web-extension.webpack.config.js",
     "watch-web": "webpack --watch --config ./build/web-extension.webpack.config.js",
@@ -105,32 +105,17 @@
     ],
     "themes": [
       {
-        "label": "One Dark Pro",
+        "label": "One Dark Pro (Beta)",
         "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro.json"
+        "path": "./themes/One-Dark-Pro.json"
       },
       {
-        "label": "One Dark Pro Flat",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-flat.json"
-      },
-      {
-        "label": "One Dark Pro Darker",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-darker.json"
-      },
-      {
-        "label": "One Dark Pro Mix",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-mix.json"
-      },
-      {
-        "label": "One Dark Pro Night Flat",
-        "uiTheme": "vs-dark",
-        "path": "./themes/OneDark-Pro-night-flat.json"
+        "label": "One Light Pro (Beta)",
+        "uiTheme": "vs",
+        "path": "./themes/One-Light-Pro.json"
       }
     ],
-    "configuration": {
+    "configurations": {
       "title": "One Dark Pro",
       "properties": {
         "oneDarkPro.editorTheme": {
@@ -160,7 +145,7 @@
         },
         "oneDarkPro.italic": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "%description.oneDarkPro.italic%"
         },
         "oneDarkPro.vivid": {
@@ -298,7 +283,9 @@
     "theme": "dark"
   },
   "dependencies": {
+    "@primer/primitives": "^11.6.0",
     "@types/marked": "^4.0.1",
+    "chroma-js": "^3.2.0",
     "marked": "4"
   },
   "capabilities": {

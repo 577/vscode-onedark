@@ -290,6 +290,11 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
+"@primer/primitives@^11.6.0":
+  version "11.7.1"
+  resolved "https://registry.yarnpkg.com/@primer/primitives/-/primitives-11.7.1.tgz#922ae1bbbfc69501018324372170aeffa7385892"
+  integrity sha512-+ch43fCGwMHe22AOvgVEg9UTCbqU3XevnnMzxk7J+jajPA0GouIJPrLFLN00uV7Fp6ZxqTj3F3vxigumEIg6Kw==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-0.14.0.tgz"
@@ -1120,6 +1125,11 @@ chownr@^1.1.1:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
   integrity sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
+
+chroma-js@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/chroma-js/-/chroma-js-3.2.0.tgz#4e9e665290b9bbfece524fccf759d5120e351ff2"
+  integrity sha512-os/OippSlX1RlWWr+QDPcGUZs0uoqr32urfxESG9U93lhUfbnlyckte84Q8P1UQY/qth983AS1JONKmLS4T0nw==
 
 chrome-trace-event@^1.0.2:
   version "1.0.3"

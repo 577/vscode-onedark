@@ -1,0 +1,4 @@
+[submodule "github-vscode-theme"]
+	url = https://github.com/primer/github-vscode-theme.git
+	path = github-vscode-theme
+	branch = copilot/fix-github-actions-workflow
